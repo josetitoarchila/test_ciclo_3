@@ -1,0 +1,429 @@
+/* caja reseto padding relleno igual */
+
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+article, figcaption, figure, footer, header, hgroup, nav, section
+{
+	display: block;
+}
+
+/* estilos del sitio */
+
+body {
+	background: #ffffff;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    color: #323232;
+    font-size: 15px;
+    font-weight: 400;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+
+
+a
+{
+	color: #666;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+
+li a
+{
+	
+   padding: 8px 10px;
+    width: 100%;
+    display: inline-block;
+    font-size: 12px;
+}
+
+a:hover 
+{
+	color: #f60;
+	
+	transition: all 0.3s ease;
+	border-color:transparent;
+}
+
+img, video {
+	max-width: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+    color: #333;	
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 60px 0;
+    /*font-family: 'Abel', sans-serif;*/
+    font-weight: normal;
+}
+
+h5 {
+    color: #333;	
+    
+    margin: 0 0 60px 0;
+    font-family:  sans-serif;
+    
+}
+
+.form-label
+{	
+	font-size: 14px;
+	
+ 	/*margin: 0;*/
+	
+	font-weight: bold;
+	
+	color: #000;
+	padding: 3px 0px;
+
+	text-align: right;
+	*display: inline;
+	zoom:1;
+	float: left;
+
+
+	
+}
+
+
+.form-label-uno
+{	
+	font-size: 12px;
+	
+ 	margin: 0;
+	
+	font-weight: bold;
+	
+	color: #000;
+	padding: 5px 0px;
+}
+.form-input
+{	
+padding: 1px 0px;
+font-size: 15px;
+	background: transparent;
+	/*border: none;
+	outline: none;
+
+color: #000;
+font-family: sans-serif;
+font-size: 14px;
+	border-bottom: 2px solid #fff;*/
+	
+}
+
+h1,
+h2 {
+    letter-spacing: 2px;
+}
+
+h3,
+h4, 
+h5 {
+    letter-spacing: 2px;
+}
+
+
+h6 {
+    letter-spacing: 1px;
+}
+/*le da el tamaño al header ojo estas son las principales instrucciones del header */
+
+header
+{
+	height: 120px;
+padding: 20px;
+}
+
+/*juega con el logo y el menu que queden alineados*/
+header, section#contenido, footer
+{
+	margin: 1 auto;
+	max-width: 90%;
+	text-align: center;
+	position: relative;
+	z-index: 1000;
+	
+
+}
+
+.header-altura .container {
+    width: 100%;
+    padding: 0 50px;
+
+}
+
+
+header.sticky{
+    height: 60px;
+    z-index: 1000;
+    position: fixed;
+    top:0px;
+}
+
+
+
+/* parte muy importante para colocar alineados el menu con el logo*/
+
+header h1, h5, nav
+{
+
+	display: inline-block;
+ 	
+	max-width: 100%;
+	vertical-align: bottom;
+	/*vertical-align: middle;*/
+	
+
+
+}
+
+header h1
+{
+	float:left;
+}	
+header h5
+{
+	margin: 0;
+	position:absolute;
+	float:right;
+padding:1px 0px;
+right:0%;
+
+	/*font-weight: bold;
+	
+	color: #000;
+	
+	float:right;
+ position:absolute;
+    bottom:35%;
+    right:30%;
+*/
+}
+header nav
+{
+	float:right;
+ position:absolute;
+    bottom:30%;
+    right:1%;
+
+}
+/* le da tamaño al logo */
+header .logo-brand img {
+    height: 100px;
+    float: left;
+}
+
+
+
+/* para quitar las viñetas*/
+
+nav ul
+{
+	list-style: none;
+	float: right;
+
+
+}
+
+nav li{
+	display: inline-block;
+	padding: 0.1em;
+	vertical-align: bottom;
+}
+
+.btn-submit
+{	
+
+	top: 200px;
+	left: 100px;
+	
+position: right;
+	width: 100px;
+	font-family: sans-serif;
+	outline: none;
+	background: #ff851b;
+	font-size: 16px;
+	border: none;
+	color: #000;
+	padding: 5px 0;
+	cursor: pointer;
+	transition: all .5s ease;
+border-radius: 2px;
+	
+}
+
+section#principal, aside
+{
+	background: #1E6381;
+	border-radius: .5em;
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0.25em;
+	vertical-align: top;
+	width: 65%	
+}
+aside
+{
+	width: 30%;
+}	
+
+.full-banner {
+    background-image: url('../img/creative-banner.jpg');
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    background-position: 50% 50%;
+}
+
+
+.banner-14 
+{
+    	background-image: url("../img/olimpiadas.jpg");
+	
+}
+
+
+
+.banner-144 
+{
+    	background-image: url("../img/25.jpg");
+	height:500px;
+  	width:1350px;
+	background-repeat:no-repeat;
+	overflow:hidden; 
+	background-position:center center;
+	margin:0; 
+	float: right;
+}
+
+.banner-1444 
+{
+    	background-image: url("../img/35.jpg");
+	height:500px;
+  	width:1350px;
+	background-repeat:no-repeat;
+	overflow:hidden; 
+	background-position:center center;
+	margin:0; 
+	float: right;
+}
+	
+
+.imageContainer {
+  margin:0; 
+  height:100%;
+  width:100%;
+  height:500px;
+  width:500px;
+  overflow:hidden; 
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+
+
+
+
+header.transparent-header.sticky + #fullscreen-banner {
+    margin-top: -100px;
+}
+
+header.transparent-header + #fullscreen-banner {
+    margin-top: 0px;
+}
+
+
+
+header + #fullscreen-banner {
+    margin-top: -50px;
+
+}
+
+/*#fullscreen-banner {*/
+    /*position: relative;*/
+/*}*/
+
+.vertical-align {
+    position: relative;
+}
+
+
+.left-nav-fixed header + #fullscreen-banner {
+    margin-top: 0px;
+}
+
+/* ojo este es que coloca la letra centrada al lado de la imagen*/
+.vertical-align .container-mid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 200;
+}
+
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+
+
+
+.banner-box h1,
+.banner-box h3,
+.banner-title h1,
+.banner-title h3,
+.banner-box h2,
+.banner-box h2,
+.banner-title h2,
+.banner-title h2 {
+    margin-bottom: 0;
+}
+
+
+.banner-box h1,
+.banner-title h1 {
+    letter-spacing: 5px;
+    font-size:60px;
+    font-weight: 300;
+text-transform: uppercase;
+	
+}
+
+.banner-box h3,
+.banner-title h3 {
+    letter-spacing: 6px;
+    font-size:20px;
+text-transform: uppercase;
+}
+	
+
+
+
+
+
+.m-top-30 {
+    margin-top: 30px;
+}

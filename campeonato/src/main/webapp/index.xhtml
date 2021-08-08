@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:p="http://primefaces.org/ui">
+	<h:head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Jekyll v3.8.5" />
+    
+	<title>Ingreso Consultorio VIVI</title>
+	<link rel="stylesheet" href="css/index.css" type="text/css" />
+	
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/" />
+
+    <!-- Bootstrap core CSS -->
+	<link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+	
+	  
+	</h:head>
+	
+	<h:body id="principal" class="text-center">
+	<style type="text/css">
+    .ui-stack {
+        z-index: 1000;
+    }
+</style>
+<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+ 	<link href="https://getbootstrap.com/docs/4.3/examples/sign-in/signin.css" rel="stylesheet" />
+
+			<h:form class="form-signin">
+				<p:messages id="messages" closable="true">
+			    </p:messages>
+				<h:graphicImage value = "img/futbol.jpg" height="200px" width="200px" alt="Image not found"/>	
+				<h1 class="h3 mb-3 font-weight-normal">Iniciar sesión</h1>
+				<h:outputLabel styleClass="sr-only" value="Usuario"/>
+				<h:inputText id="usuario" required="true"  requiredMessage="campo requerido" value="#{adm_usuarioBean.userName}">
+				</h:inputText>
+				<h:message for="usuario"></h:message> 
+				<h:outputLabel styleClass="sr-only" value="Password" />
+				<h:inputSecret id="password" required="true" requiredMessage="campo requerido" value="#{adm_usuarioBean.password}">
+				</h:inputSecret>
+				<h:message for="password"></h:message>
+				<p:separator />
+				<h:commandButton value="Ingresar" action="#{adm_usuarioBean.validateLoginCredentials}" />
+			</h:form>
+		
+	</h:body>
+	
+
+
+</html>
